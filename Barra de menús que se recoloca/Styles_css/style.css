@@ -1,0 +1,54 @@
+body{
+    background-color: skyblue;
+}
+.c{
+    padding: 3px 5px;
+}
+
+.hor>li{
+    position:relative;
+    left: 22%;
+    border: solid 1px black;
+    padding:10px 20px;
+    display:inline; 
+    background-color: whitesmoke;
+}
+a{
+    text-decoration: none;
+}
+li:hover{
+    background: yellow;
+    cursor: pointer;
+}
+.ver{
+    float:left;
+}
+.ver>li{
+    display:hidden;
+    border:solid 1px black;
+    padding:10px 20px;
+    background-color: whitesmoke;
+    display:none;
+    margin: 20px;
+}
+
+p{
+    text-align: center;
+}
+
+@media screen and (max-width:900px){
+.ver>li{
+    display:block;
+}
+.hor>li{
+    display:none; 
+}
+p{
+    padding-right: 300px;
+    padding-top: 50px;
+}
+li:hover{
+    background: yellow;
+    cursor: pointer;
+}
+}
